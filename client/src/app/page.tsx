@@ -1,5 +1,13 @@
+import ProductList from "@/components/ProductList";
+import Image from "next/image";
+
 export default function Home() {
-  return <div className="flex min-h-screen items-center justify-center">
-    <h1>Home page</h1>
-  </div>;
+  return (
+    <div className="">
+      <div className="relative aspect-[3/1] mb-12">
+        <Image src="/featured.png" alt="Featured Product" fill />
+      </div>
+      <ProductList />
+    </div>
+  );
 }
