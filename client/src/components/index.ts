@@ -1,0 +1,10 @@
+export { default as Navbar } from "./Navbar";
+export { default as Footer } from "./Footer";
+export { default as SearchBar } from "./SearchBar";
+export { default as ShoppingCartIcon } from "./ShoppingCartIcon";
+export { default as ProductCard } from "./ProductCard";
+export { default as ProductList } from "./ProductList";
+export { default as Categories } from "./Categories";
+export { default as Filter } from "./Filter";
+export { default as PaymentsForm } from "./PaymentsForm";
+export { default as ShippingForm } from "./ShippingForm";

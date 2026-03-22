@@ -1,9 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
-import { SearchBar } from "./SearchBar";
-import { Bell, Home, ShoppingCart } from "lucide-react";
+import SearchBar from "./SearchBar";
+import { Bell, Home } from "lucide-react";
+import ShoppingCartIcon from "./ShoppingCartIcon";
 
-export const Navbar = () => {
+const Navbar = () => {
   return (
     <nav className="w-full flex items-center justify-between border-b border-gray-200 pb-4">
       {/* LEFT */}
@@ -26,11 +27,11 @@ export const Navbar = () => {
           <Home className="w-4 h-4 text-gray-600" />
         </Link>
         <Bell className="w-4 h-4 text-gray-600" />
-        <Link href="/">
-          <ShoppingCart className="w-4 h-4 text-gray-600" />
-        </Link>
+        <ShoppingCartIcon />
         <Link href="/login">Sign in</Link>
       </div>
     </nav>
   );
 };
+
+export default Navbar;

@@ -1,6 +1,6 @@
 "use client";
 
-// import useCartStore from "@/stores/cartStore";
+import useCartStore from "@/stores/cartStore";
 import { ProductType } from "@/types";
 import { ShoppingCart } from "lucide-react";
 import Image from "next/image";
@@ -14,7 +14,7 @@ const ProductCard = ({ product }: { product: ProductType }) => {
     color: product.colors[0],
   });
 
-  //   const { addToCart } = useCartStore();
+  const { addToCart } = useCartStore();
 
   const handleProductType = ({
     type,
@@ -30,12 +30,12 @@ const ProductCard = ({ product }: { product: ProductType }) => {
   };
 
   const handleAddToCart = () => {
-    // addToCart({
-    //   ...product,
-    //   quantity: 1,
-    //   selectedSize: productTypes.size,
-    //   selectedColor: productTypes.color,
-    // });
+    addToCart({
+      ...product,
+      quantity: 1,
+      selectedSize: productTypes.size,
+      selectedColor: productTypes.color,
+    });
     toast.success("Product added to cart");
   };
 
