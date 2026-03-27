@@ -9,7 +9,7 @@ const PaymentForm = () => {
     register,
     handleSubmit,
     formState: { errors },
-  } = useForm<PaymentFormInputs>({
+  } = useForm({
     resolver: zodResolver(paymentFormSchema),
   });
 

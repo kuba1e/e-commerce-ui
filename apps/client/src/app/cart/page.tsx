@@ -2,7 +2,7 @@
 
 import { ShippingForm, PaymentsForm } from "@/components";
 import useCartStore from "@/stores/cartStore";
-import { CartItemsType, ShippingFormInputs } from "@/types";
+import { ShippingFormInputs } from "@/types";
 import { ArrowRight, Trash2 } from "lucide-react";
 import Image from "next/image";
 import { useRouter, useSearchParams } from "next/navigation";
